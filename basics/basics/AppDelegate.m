@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  strings
+//  basics
 //
 //  Created by Bokai Li on 10/27/21.
 //
