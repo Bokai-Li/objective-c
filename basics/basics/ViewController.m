@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "Civic.h"
 
 @interface ViewController ()
 // just like var declaration in Swift
@@ -193,8 +194,8 @@
     for (NSString *item in arr3) {
         NSLog(@"%@", item);
     }
-    
-    
+    // drive from subclass, I am driving
+    Civic *civic = [[Civic alloc]init];
 }
 
 

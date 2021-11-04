@@ -15,6 +15,8 @@
 		7CA0707F2729DD3D002F2AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA0707D2729DD3D002F2AAC /* LaunchScreen.storyboard */; };
 		7CA070822729DD3D002F2AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA070812729DD3D002F2AAC /* main.m */; };
 		7CA0708D2729DDB5002F2AAC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0708C2729DDB5002F2AAC /* Person.m */; };
+		7CA07096273468AC002F2AAC /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA07095273468AC002F2AAC /* Vehicle.m */; };
+		7CA07099273468C2002F2AAC /* Civic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA07098273468C2002F2AAC /* Civic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		7CA070812729DD3D002F2AAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CA0708B2729DDB5002F2AAC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		7CA0708C2729DDB5002F2AAC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		7CA07094273468AC002F2AAC /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		7CA07095273468AC002F2AAC /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		7CA07097273468C2002F2AAC /* Civic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Civic.h; sourceTree = "<group>"; };
+		7CA07098273468C2002F2AAC /* Civic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Civic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				7CA070812729DD3D002F2AAC /* main.m */,
 				7CA0708B2729DDB5002F2AAC /* Person.h */,
 				7CA0708C2729DDB5002F2AAC /* Person.m */,
+				7CA07094273468AC002F2AAC /* Vehicle.h */,
+				7CA07095273468AC002F2AAC /* Vehicle.m */,
+				7CA07097273468C2002F2AAC /* Civic.h */,
+				7CA07098273468C2002F2AAC /* Civic.m */,
 			);
 			path = basics;
 			sourceTree = "<group>";
@@ -153,9 +163,11 @@
 			files = (
 				7CA070772729DD3C002F2AAC /* ViewController.m in Sources */,
 				7CA070712729DD3C002F2AAC /* AppDelegate.m in Sources */,
+				7CA07096273468AC002F2AAC /* Vehicle.m in Sources */,
 				7CA0708D2729DDB5002F2AAC /* Person.m in Sources */,
 				7CA070822729DD3D002F2AAC /* main.m in Sources */,
 				7CA070742729DD3C002F2AAC /* SceneDelegate.m in Sources */,
+				7CA07099273468C2002F2AAC /* Civic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
