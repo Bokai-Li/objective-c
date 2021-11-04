@@ -15,6 +15,23 @@ NS_ASSUME_NONNULL_BEGIN
 }
 // public variable, automatically generated getter and setter
 @property (nonatomic,strong) NSString *firstName;
+
+//Swift:
+//class Person {
+// class function
+//    func speakName(){
+//        print("My name is Jack Davis")
+//    }
+// type/static function
+//    class func stateSpecies() {
+//        print("I am a human")
+//    }
+//}
+//person.speakName()
+//Person.stateSpecies()
+// Note theses are public functions that can be called outside of this class
+- (void)speakName;
++ (void)stateSpecies;
 @end
 
 NS_ASSUME_NONNULL_END
