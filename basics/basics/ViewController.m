@@ -153,6 +153,48 @@
     // i.e.
     NSNumber *number = [NSNumber numberWithInt:55];
     NSLog(@"Number: %@", number.stringValue); // accessing a property
+    
+    // NSArray is not mutable. Need to set values during initilization
+    NSArray *arr = [NSArray arrayWithObjects:@"first",@"and",@"second", @"object", nil];
+    NSArray *arr2 = @[@"another", @"NS", @"Array",@"literal", @"declaration"];
+    NSArray *arr3 = [NSArray arrayWithArray:arr];
+    
+    // NSMutableArray is mutable.
+    NSMutableArray *mutArr = [[NSMutableArray alloc]init];
+    NSMutableArray *mutArr2 = mutArr; // shallow copy
+    NSMutableArray *mutArr3 = [NSMutableArray arrayWithArray:mutArr]; // deep copy
+    [mutArr addObject:@"hello"];
+    [mutArr addObject:@"world"];
+    NSLog(@"mutArr: %@", mutArr.debugDescription); //hello world
+    [mutArr removeObjectAtIndex:1];
+    NSLog(@"mutArr: %@", mutArr.debugDescription); //hello
+    NSLog(@"mutArr2: %@", mutArr2.debugDescription); //hello
+    NSLog(@"mutArr3: %@", mutArr3.debugDescription); //empty
+    
+    // NSDictionary not mutable
+    NSNumber *age = [NSNumber numberWithInt:30];
+    NSNumber *age2 = [NSNumber numberWithInt:40];
+    NSDictionary *dict = @{@"John":age,@"Jack":age2}; // can mix data type but not recommended
+    int jackAge = [[dict objectForKey:@"Jack"] intValue];
+    NSLog(@"Jack age: %d", jackAge);
+    
+    // NSMutableDictionary
+    NSMutableDictionary *mutDict2 = [@{@"John":age,@"Jack":age2} mutableCopy];
+    NSMutableDictionary *mutDict3 = [NSMutableDictionary dictionaryWithDictionary:dict];
+    NSMutableDictionary *mutDict = [[NSMutableDictionary alloc]init];
+    [mutDict setObject:@"an object" forKey:@"a key"];
+    
+    // for loops
+    for (int x = 0; x < arr2.count; x++) {
+        NSString *item = [arr2 objectAtIndex:x];
+        NSLog(@"%@", item);
+    }
+    // fast enumeration (for each)
+    for (NSString *item in arr3) {
+        NSLog(@"%@", item);
+    }
+    
+    
 }
 
 
