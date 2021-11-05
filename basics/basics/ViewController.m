@@ -196,6 +196,11 @@
     }
     // drive from subclass, I am driving
     Civic *civic = [[Civic alloc]init];
+    
+    Person *person1 = [Person new]; //same as [[Person alloc]init];
+    Person *person2 = [[Person alloc] initWithFirstName:@"John" lastName:@"Doe"]; //custom designated initializer
+    [person1 printName];
+    [person2 printName];
 }
 
 

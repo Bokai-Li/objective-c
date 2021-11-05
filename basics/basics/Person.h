@@ -15,7 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 }
 // public variable, automatically generated getter and setter
 @property (nonatomic,strong) NSString *firstName;
-
+@property (nonatomic,strong) NSString *lastName;
+// custom initilizer
+-(id)initWithFirstName:(NSString*)first lastName:(NSString *)last;
+-(void)printName;
 //Swift:
 //class Person {
 // class function
