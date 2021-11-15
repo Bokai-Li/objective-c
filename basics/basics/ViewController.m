@@ -8,12 +8,14 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "Civic.h"
+#import "Honda+SupedUp.h"
 
 @interface ViewController ()
 // just like var declaration in Swift
 // var bankAcount = 500.50
 @property (nonatomic) double bankAccount;
 @property (nonatomic) double itemAmount;
+
 @end
 
 @implementation ViewController
@@ -201,6 +203,17 @@
     Person *person2 = [[Person alloc] initWithFirstName:@"John" lastName:@"Doe"]; //custom designated initializer
     [person1 printName];
     [person2 printName];
+    
+    // category (extension to class) Honda+SupedUP.h
+    Honda *honda = [[Honda alloc]init];
+    [honda addUglySpoler];
+    [honda addGoldPlasticSpinnerRims];
+    
+    
+    //Swift and Objective-C Interoperability
+    
+}
+- (IBAction)loadSecondVC:(id)sender {
 }
 
 
