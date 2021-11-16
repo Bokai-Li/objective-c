@@ -28,7 +28,6 @@
     // Do any additional setup after loading the view.
     [[HTTPService instance] getTutorials:^(NSArray * _Nullable dataArray, NSString * _Nullable errMessage) {
         if (dataArray) {
-            
             NSMutableArray *arr = [[NSMutableArray alloc]init];
             
             for (NSDictionary *d in dataArray){
@@ -63,11 +62,13 @@
         cell = [[VideoCell alloc]init];
     }
     
-    return nil;
+    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    VideoCell *vidCell = (VideoCell*)cell;
+    [vidCell updateUI:video];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -27,7 +27,7 @@
                                 <rect key="frame" x="20" y="90" width="374" height="806"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="123" id="z8V-zM-lBB" customClass="VideoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="main" rowHeight="123" id="z8V-zM-lBB" customClass="VideoCell">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z8V-zM-lBB" id="pQT-dG-zsi">
@@ -38,7 +38,7 @@
                                                     <rect key="frame" x="10" y="10" width="354" height="103"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M8u-VM-m4B">
-                                                            <rect key="frame" x="2" y="2" width="174" height="99"/>
+                                                            <rect key="frame" x="0.0" y="2" width="176" height="99"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="99" id="JYR-ys-a7g"/>
                                                                 <constraint firstAttribute="width" constant="176" id="fXI-0o-emr"/>
@@ -65,7 +65,6 @@
                                                         <constraint firstItem="M8u-VM-m4B" firstAttribute="top" secondItem="gec-dU-tGQ" secondAttribute="top" constant="2" id="6fp-EZ-aQc"/>
                                                         <constraint firstItem="JHF-rT-jKd" firstAttribute="leading" secondItem="M8u-VM-m4B" secondAttribute="trailing" constant="8" symbolic="YES" id="EAn-hd-Dbs"/>
                                                         <constraint firstItem="z7M-3W-WtK" firstAttribute="top" secondItem="gec-dU-tGQ" secondAttribute="top" constant="8" id="ETX-hn-WjY"/>
-                                                        <constraint firstItem="M8u-VM-m4B" firstAttribute="leading" secondItem="gec-dU-tGQ" secondAttribute="leading" constant="2" id="R6u-uY-3os"/>
                                                         <constraint firstAttribute="bottom" secondItem="M8u-VM-m4B" secondAttribute="bottom" constant="2" id="Z4i-L5-ajP"/>
                                                         <constraint firstItem="z7M-3W-WtK" firstAttribute="leading" secondItem="M8u-VM-m4B" secondAttribute="trailing" constant="8" symbolic="YES" id="Zxm-Nw-2mR"/>
                                                         <constraint firstAttribute="trailing" secondItem="M8u-VM-m4B" secondAttribute="trailing" constant="178" id="q3Y-Tp-aa5"/>
