@@ -29,7 +29,7 @@
     [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (data != nil){
             NSError *err;
-            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err]; // saving err in *err for json parsing
+            NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err]; // saving err in *err for json parsing
             if (err == nil) {
                 completionHandler(json, nil);
             } else {
@@ -40,7 +40,6 @@
             NSLog(@"Network err: %@", error.debugDescription);
             completionHandler(nil, @"Problem with server response.");
         }
-        
     }] resume];
 }
 

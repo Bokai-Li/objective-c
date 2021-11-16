@@ -15,6 +15,7 @@
 		7CB2B2292742FEFD00A754CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB2B2272742FEFD00A754CF /* LaunchScreen.storyboard */; };
 		7CB2B22C2742FEFD00A754CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B22B2742FEFD00A754CF /* main.m */; };
 		7CB2B2352742FF3500A754CF /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B2342742FF3500A754CF /* HTTPService.m */; };
+		7CB2B2392744284800A754CF /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B2382744284800A754CF /* VideoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		7CB2B22B2742FEFD00A754CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CB2B2332742FF3500A754CF /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		7CB2B2342742FF3500A754CF /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		7CB2B2372744284800A754CF /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		7CB2B2382744284800A754CF /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		7CB2B2182742FEFC00A754CF /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CB2B2362744282400A754CF /* View */,
 				7CB2B2322742FF1E00A754CF /* Services */,
 				7CB2B2192742FEFC00A754CF /* AppDelegate.h */,
 				7CB2B21A2742FEFC00A754CF /* AppDelegate.m */,
@@ -87,6 +91,15 @@
 				7CB2B2342742FF3500A754CF /* HTTPService.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7CB2B2362744282400A754CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CB2B2372744284800A754CF /* VideoCell.h */,
+				7CB2B2382744284800A754CF /* VideoCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB2B2212742FEFC00A754CF /* ViewController.m in Sources */,
+				7CB2B2392744284800A754CF /* VideoCell.m in Sources */,
 				7CB2B2352742FF3500A754CF /* HTTPService.m in Sources */,
 				7CB2B21B2742FEFC00A754CF /* AppDelegate.m in Sources */,
 				7CB2B22C2742FEFD00A754CF /* main.m in Sources */,

@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[HTTPService instance] getTutorials:^(NSDictionary * _Nullable dataDict, NSString * _Nullable errMessage) {
-        if (dataDict) {
-            NSLog(@"Dictionary %@", dataDict.debugDescription);
+    [[HTTPService instance] getTutorials:^(NSArray * _Nullable dataArray, NSString * _Nullable errMessage) {
+        if (dataArray) {
+            NSLog(@"Dictionary %@", dataArray.debugDescription);
         } else if (errMessage){
             //Display alert to user
         }
