@@ -16,6 +16,7 @@
 		7CB2B22C2742FEFD00A754CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B22B2742FEFD00A754CF /* main.m */; };
 		7CB2B2352742FF3500A754CF /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B2342742FF3500A754CF /* HTTPService.m */; };
 		7CB2B2392744284800A754CF /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B2382744284800A754CF /* VideoCell.m */; };
+		7CB2B23D274450F900A754CF /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB2B23C274450F900A754CF /* Video.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		7CB2B2342742FF3500A754CF /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 		7CB2B2372744284800A754CF /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
 		7CB2B2382744284800A754CF /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		7CB2B23B274450F900A754CF /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		7CB2B23C274450F900A754CF /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		7CB2B2182742FEFC00A754CF /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CB2B23A274450E700A754CF /* Model */,
 				7CB2B2362744282400A754CF /* View */,
 				7CB2B2322742FF1E00A754CF /* Services */,
 				7CB2B2192742FEFC00A754CF /* AppDelegate.h */,
@@ -100,6 +104,15 @@
 				7CB2B2382744284800A754CF /* VideoCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7CB2B23A274450E700A754CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CB2B23B274450F900A754CF /* Video.h */,
+				7CB2B23C274450F900A754CF /* Video.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +191,7 @@
 				7CB2B21B2742FEFC00A754CF /* AppDelegate.m in Sources */,
 				7CB2B22C2742FEFD00A754CF /* main.m in Sources */,
 				7CB2B21E2742FEFC00A754CF /* SceneDelegate.m in Sources */,
+				7CB2B23D274450F900A754CF /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

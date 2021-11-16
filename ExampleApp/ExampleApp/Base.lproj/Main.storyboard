@@ -107,6 +107,9 @@
                             <constraint firstItem="MKF-56-FjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c83-Qc-ogt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vhd-3W-SWZ" id="0Ew-ac-q5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
