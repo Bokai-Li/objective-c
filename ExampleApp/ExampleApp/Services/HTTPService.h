@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
+// type definition, a block (anonymous function object)
+// typedef output_type (^block_name) (input, input2, ...)
+typedef void (^onComplete) (NSDictionary *__nullable dataDict, NSString * __nullable errMessage);
 
 @interface HTTPService : NSObject
 
 + (id) instance;
-
+- (void) getTutorials:(nullable onComplete)completionHandler;
 
 @end
 
