@@ -48,6 +48,10 @@
             //Display alert to user
         }
     }];
+    
+    // hard code trigger for post request
+    NSDictionary *comment = @{@"username":@"dev",@"comment":@"dev's comment"};
+    [[HTTPService instance] postComment:comment];
 }
 
 -(void) updateTableData {

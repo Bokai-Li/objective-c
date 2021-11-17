@@ -44,6 +44,28 @@ var tutorials = [
     }
 ]
 
+var comments = [
+{
+    username: "defaultUser",
+    comment: "defaultComment",
+}
+];
+
+app.post('/comments', function(req, res){
+    var commentObj = req.body
+    if (commentObj) {
+        if (commentObj.username && commentObj.comment){
+            comments.push(commentObj)
+        }else{
+            res.send("invalid")
+        }
+    }else{
+        res.send("no body")
+    }
+    console.log(comments)
+    res.send("success")
+})
+
 app.get('/tutorials', function(req, res) {
     console.log("GET from server");
     res.send(tutorials)
