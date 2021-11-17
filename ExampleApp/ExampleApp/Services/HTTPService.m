@@ -7,7 +7,7 @@
 
 #import "HTTPService.h"
 
-#define URL_BASE "http://localhost:6069"
+#define URL_BASE "http://bokais-macbook-pro.local:6069"
 #define URL_TUTORIALS "/tutorials"
 
 @implementation HTTPService

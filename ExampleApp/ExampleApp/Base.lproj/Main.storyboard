@@ -108,16 +108,101 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="vhd-3W-SWZ" id="0Ew-ac-q5j"/>
+                        <segue destination="1BU-zz-rsb" kind="presentation" identifier="videoVC" id="h5z-yW-FOe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="txd-F8-OMm">
+            <objects>
+                <viewController id="1BU-zz-rsb" customClass="VideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWk-fE-2gt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-yM-ZhU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="274"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="Reg-vw-kUx"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prd-Qr-grh">
+                                <rect key="frame" x="0.0" y="289" width="414" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="lP2-ol-Q5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-OB-iKo">
+                                <rect key="frame" x="0.0" y="355" width="414" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="Iqz-mZ-E9I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhj-XE-T42">
+                                <rect key="frame" x="0.0" y="773" width="414" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="qwB-Yk-CMW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DONE">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="donePressed:" destination="1BU-zz-rsb" eventType="touchUpInside" id="bSo-1c-r7S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0nV-VM-dYh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ugf-OB-iKo" firstAttribute="top" secondItem="prd-Qr-grh" secondAttribute="bottom" constant="15" id="0gH-DQ-umt"/>
+                            <constraint firstItem="ypY-yM-ZhU" firstAttribute="trailing" secondItem="0nV-VM-dYh" secondAttribute="trailing" id="5HY-fi-Mhv"/>
+                            <constraint firstItem="ugf-OB-iKo" firstAttribute="leading" secondItem="0nV-VM-dYh" secondAttribute="leading" id="6Ka-MS-iNk"/>
+                            <constraint firstItem="Uhj-XE-T42" firstAttribute="bottom" secondItem="0nV-VM-dYh" secondAttribute="bottom" constant="20" id="IfP-TM-Qfy"/>
+                            <constraint firstItem="0nV-VM-dYh" firstAttribute="trailing" secondItem="prd-Qr-grh" secondAttribute="trailing" id="IwA-BV-AuA"/>
+                            <constraint firstItem="Uhj-XE-T42" firstAttribute="leading" secondItem="0nV-VM-dYh" secondAttribute="leading" id="MY5-su-00t"/>
+                            <constraint firstItem="ugf-OB-iKo" firstAttribute="trailing" secondItem="0nV-VM-dYh" secondAttribute="trailing" id="QBq-Lq-RXT"/>
+                            <constraint firstItem="prd-Qr-grh" firstAttribute="top" secondItem="ypY-yM-ZhU" secondAttribute="bottom" constant="15" id="Wte-DY-9Oo"/>
+                            <constraint firstItem="prd-Qr-grh" firstAttribute="leading" secondItem="0nV-VM-dYh" secondAttribute="leading" id="Ydk-Tf-Kc6"/>
+                            <constraint firstItem="ypY-yM-ZhU" firstAttribute="top" secondItem="0nV-VM-dYh" secondAttribute="top" id="ZmU-2f-kS8"/>
+                            <constraint firstItem="Uhj-XE-T42" firstAttribute="trailing" secondItem="0nV-VM-dYh" secondAttribute="trailing" id="jw4-Y3-DcG"/>
+                            <constraint firstItem="ypY-yM-ZhU" firstAttribute="leading" secondItem="0nV-VM-dYh" secondAttribute="leading" id="vkq-hd-P6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="ugf-OB-iKo" id="0dh-TZ-vjL"/>
+                        <outlet property="titleLabel" destination="prd-Qr-grh" id="WAv-Nt-29T"/>
+                        <outlet property="webView" destination="ypY-yM-ZhU" id="dcm-bM-qeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOA-C8-cIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118.840579710145" y="124.55357142857142"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
