@@ -39,7 +39,7 @@ var tutorials = [
         id:4,
         title: "yama『血流』MV",
         description: "♪yama 『血流』収録の1st ALBUM絶賛デジタル配信中♪",
-        iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/munngDZLwO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        iframe:'<p>Hello</p>',
         thumbnail: "https://i.ytimg.com/vi/munngDZLwO4/maxresdefault.jpg"
     }
 ]
