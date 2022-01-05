@@ -19,12 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-jz-VBq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK6-Rz-n8b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK6-Rz-n8b">
                                 <rect key="frame" x="0.0" y="279" width="414" height="398"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="" image="cat">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
+                                <state key="normal" title="" image="cat"/>
                                 <connections>
                                     <action selector="theCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSm-wp-LCq"/>
                                 </connections>
