@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="American Captain.otf">
+            <string>AmericanCaptain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ArH-zw-aJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll the Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlh-QP-UlS">
+                                <rect key="frame" x="16" y="20" width="343" height="185.5"/>
+                                <fontDescription key="fontDescription" name="AmericanCaptain" family="American Captain" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuW-Xc-HNk">
+                                <rect key="frame" x="16" y="461.5" width="343" height="185.5"/>
+                                <fontDescription key="fontDescription" name="AmericanCaptain" family="American Captain" pointSize="90"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ub-yj-Kfr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="qXX-Zc-oWK">
+                                <rect key="frame" x="67" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qXX-Zc-oWK" secondAttribute="height" multiplier="1:1" id="7fp-Zr-fpe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qXX-Zc-oWK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dd-s1-7MA"/>
+                            <constraint firstItem="MuW-Xc-HNk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AOs-fA-RNE"/>
+                            <constraint firstItem="qXX-Zc-oWK" firstAttribute="top" secondItem="hlh-QP-UlS" secondAttribute="bottom" constant="8" id="CFo-u8-7vF"/>
+                            <constraint firstItem="ArH-zw-aJ7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FJQ-K3-MGt"/>
+                            <constraint firstItem="qXX-Zc-oWK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fg0-45-HRF"/>
+                            <constraint firstItem="ArH-zw-aJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IXh-ge-hMn"/>
+                            <constraint firstItem="MuW-Xc-HNk" firstAttribute="height" secondItem="hlh-QP-UlS" secondAttribute="height" id="Lkc-F2-oDJ"/>
+                            <constraint firstItem="hlh-QP-UlS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MmC-Mb-Sko"/>
+                            <constraint firstItem="MuW-Xc-HNk" firstAttribute="top" secondItem="qXX-Zc-oWK" secondAttribute="bottom" constant="8" id="SOc-Jm-kS4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qXX-Zc-oWK" secondAttribute="trailing" constant="52" id="VUg-jU-jEL"/>
+                            <constraint firstAttribute="bottom" secondItem="ArH-zw-aJ7" secondAttribute="bottom" id="VgZ-et-Gnk"/>
+                            <constraint firstItem="hlh-QP-UlS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="eht-Kn-ein"/>
+                            <constraint firstAttribute="bottom" secondItem="MuW-Xc-HNk" secondAttribute="bottom" constant="20" id="g1o-Df-BRy"/>
+                            <constraint firstAttribute="trailing" secondItem="ArH-zw-aJ7" secondAttribute="trailing" id="gmP-RJ-61i"/>
+                            <constraint firstItem="hlh-QP-UlS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iou-lt-TKi"/>
+                            <constraint firstItem="MuW-Xc-HNk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kaq-jd-szo"/>
+                            <constraint firstItem="qXX-Zc-oWK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="oMF-aG-L5k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="qXX-Zc-oWK" id="hxA-cl-B10"/>
+                        <outlet property="label" destination="hlh-QP-UlS" id="bSB-8c-w8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1980" height="1200"/>
+        <image name="Dice1" width="512" height="512"/>
+    </resources>
+</document>

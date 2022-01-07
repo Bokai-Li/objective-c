@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12BA05181EF96F70006DEBDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BA05171EF96F70006DEBDB /* AppDelegate.m */; };
+		12BA051B1EF96F70006DEBDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BA051A1EF96F70006DEBDB /* ViewController.m */; };
+		12BA051E1EF96F70006DEBDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BA051C1EF96F70006DEBDB /* Main.storyboard */; };
+		12BA05201EF96F70006DEBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BA051F1EF96F70006DEBDB /* Assets.xcassets */; };
+		12BA05231EF96F70006DEBDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BA05211EF96F70006DEBDB /* LaunchScreen.storyboard */; };
+		12BA05261EF96F70006DEBDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BA05251EF96F70006DEBDB /* main.m */; };
+		12BA05301EF96F70006DEBDB /* TrafficLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BA052F1EF96F70006DEBDB /* TrafficLightsTests.m */; };
+		12BA053B1EF96F70006DEBDB /* TrafficLightsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BA053A1EF96F70006DEBDB /* TrafficLightsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12BA052C1EF96F70006DEBDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BA050B1EF96F70006DEBDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BA05121EF96F70006DEBDB;
+			remoteInfo = TrafficLights;
+		};
+		12BA05371EF96F70006DEBDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BA050B1EF96F70006DEBDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BA05121EF96F70006DEBDB;
+			remoteInfo = TrafficLights;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12BA05131EF96F70006DEBDB /* TrafficLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BA05161EF96F70006DEBDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12BA05171EF96F70006DEBDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12BA05191EF96F70006DEBDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12BA051A1EF96F70006DEBDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12BA051D1EF96F70006DEBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12BA051F1EF96F70006DEBDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12BA05221EF96F70006DEBDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12BA05241EF96F70006DEBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BA05251EF96F70006DEBDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12BA052B1EF96F70006DEBDB /* TrafficLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BA052F1EF96F70006DEBDB /* TrafficLightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficLightsTests.m; sourceTree = "<group>"; };
+		12BA05311EF96F70006DEBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BA05361EF96F70006DEBDB /* TrafficLightsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BA053A1EF96F70006DEBDB /* TrafficLightsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficLightsUITests.m; sourceTree = "<group>"; };
+		12BA053C1EF96F70006DEBDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12BA05101EF96F70006DEBDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05281EF96F70006DEBDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05331EF96F70006DEBDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12BA050A1EF96F70006DEBDB = {
+			isa = PBXGroup;
+			children = (
+				12BA05151EF96F70006DEBDB /* TrafficLights */,
+				12BA052E1EF96F70006DEBDB /* TrafficLightsTests */,
+				12BA05391EF96F70006DEBDB /* TrafficLightsUITests */,
+				12BA05141EF96F70006DEBDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12BA05141EF96F70006DEBDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12BA05131EF96F70006DEBDB /* TrafficLights.app */,
+				12BA052B1EF96F70006DEBDB /* TrafficLightsTests.xctest */,
+				12BA05361EF96F70006DEBDB /* TrafficLightsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12BA05151EF96F70006DEBDB /* TrafficLights */ = {
+			isa = PBXGroup;
+			children = (
+				12BA05161EF96F70006DEBDB /* AppDelegate.h */,
+				12BA05171EF96F70006DEBDB /* AppDelegate.m */,
+				12BA05191EF96F70006DEBDB /* ViewController.h */,
+				12BA051A1EF96F70006DEBDB /* ViewController.m */,
+				12BA051C1EF96F70006DEBDB /* Main.storyboard */,
+				12BA051F1EF96F70006DEBDB /* Assets.xcassets */,
+				12BA05211EF96F70006DEBDB /* LaunchScreen.storyboard */,
+				12BA05241EF96F70006DEBDB /* Info.plist */,
+				12BA05251EF96F70006DEBDB /* main.m */,
+			);
+			path = TrafficLights;
+			sourceTree = "<group>";
+		};
+		12BA052E1EF96F70006DEBDB /* TrafficLightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				12BA052F1EF96F70006DEBDB /* TrafficLightsTests.m */,
+				12BA05311EF96F70006DEBDB /* Info.plist */,
+			);
+			path = TrafficLightsTests;
+			sourceTree = "<group>";
+		};
+		12BA05391EF96F70006DEBDB /* TrafficLightsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12BA053A1EF96F70006DEBDB /* TrafficLightsUITests.m */,
+				12BA053C1EF96F70006DEBDB /* Info.plist */,
+			);
+			path = TrafficLightsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12BA05121EF96F70006DEBDB /* TrafficLights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BA053F1EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLights" */;
+			buildPhases = (
+				12BA050F1EF96F70006DEBDB /* Sources */,
+				12BA05101EF96F70006DEBDB /* Frameworks */,
+				12BA05111EF96F70006DEBDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficLights;
+			productName = TrafficLights;
+			productReference = 12BA05131EF96F70006DEBDB /* TrafficLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12BA052A1EF96F70006DEBDB /* TrafficLightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BA05421EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */;
+			buildPhases = (
+				12BA05271EF96F70006DEBDB /* Sources */,
+				12BA05281EF96F70006DEBDB /* Frameworks */,
+				12BA05291EF96F70006DEBDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BA052D1EF96F70006DEBDB /* PBXTargetDependency */,
+			);
+			name = TrafficLightsTests;
+			productName = TrafficLightsTests;
+			productReference = 12BA052B1EF96F70006DEBDB /* TrafficLightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12BA05351EF96F70006DEBDB /* TrafficLightsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BA05451EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLightsUITests" */;
+			buildPhases = (
+				12BA05321EF96F70006DEBDB /* Sources */,
+				12BA05331EF96F70006DEBDB /* Frameworks */,
+				12BA05341EF96F70006DEBDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BA05381EF96F70006DEBDB /* PBXTargetDependency */,
+			);
+			name = TrafficLightsUITests;
+			productName = TrafficLightsUITests;
+			productReference = 12BA05361EF96F70006DEBDB /* TrafficLightsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12BA050B1EF96F70006DEBDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Aaron Caines";
+				TargetAttributes = {
+					12BA05121EF96F70006DEBDB = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					12BA052A1EF96F70006DEBDB = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 12BA05121EF96F70006DEBDB;
+					};
+					12BA05351EF96F70006DEBDB = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 12BA05121EF96F70006DEBDB;
+					};
+				};
+			};
+			buildConfigurationList = 12BA050E1EF96F70006DEBDB /* Build configuration list for PBXProject "TrafficLights" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12BA050A1EF96F70006DEBDB;
+			productRefGroup = 12BA05141EF96F70006DEBDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12BA05121EF96F70006DEBDB /* TrafficLights */,
+				12BA052A1EF96F70006DEBDB /* TrafficLightsTests */,
+				12BA05351EF96F70006DEBDB /* TrafficLightsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12BA05111EF96F70006DEBDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BA05231EF96F70006DEBDB /* LaunchScreen.storyboard in Resources */,
+				12BA05201EF96F70006DEBDB /* Assets.xcassets in Resources */,
+				12BA051E1EF96F70006DEBDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05291EF96F70006DEBDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05341EF96F70006DEBDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12BA050F1EF96F70006DEBDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BA051B1EF96F70006DEBDB /* ViewController.m in Sources */,
+				12BA05261EF96F70006DEBDB /* main.m in Sources */,
+				12BA05181EF96F70006DEBDB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05271EF96F70006DEBDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BA05301EF96F70006DEBDB /* TrafficLightsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BA05321EF96F70006DEBDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BA053B1EF96F70006DEBDB /* TrafficLightsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12BA052D1EF96F70006DEBDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BA05121EF96F70006DEBDB /* TrafficLights */;
+			targetProxy = 12BA052C1EF96F70006DEBDB /* PBXContainerItemProxy */;
+		};
+		12BA05381EF96F70006DEBDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BA05121EF96F70006DEBDB /* TrafficLights */;
+			targetProxy = 12BA05371EF96F70006DEBDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12BA051C1EF96F70006DEBDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12BA051D1EF96F70006DEBDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12BA05211EF96F70006DEBDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12BA05221EF96F70006DEBDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12BA053D1EF96F70006DEBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12BA053E1EF96F70006DEBDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12BA05401EF96F70006DEBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12BA05411EF96F70006DEBDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12BA05431EF96F70006DEBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/TrafficLights";
+			};
+			name = Debug;
+		};
+		12BA05441EF96F70006DEBDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLightsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/TrafficLights";
+			};
+			name = Release;
+		};
+		12BA05461EF96F70006DEBDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficLights;
+			};
+			name = Debug;
+		};
+		12BA05471EF96F70006DEBDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = TrafficLightsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.TrafficLightsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficLights;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12BA050E1EF96F70006DEBDB /* Build configuration list for PBXProject "TrafficLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BA053D1EF96F70006DEBDB /* Debug */,
+				12BA053E1EF96F70006DEBDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BA053F1EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BA05401EF96F70006DEBDB /* Debug */,
+				12BA05411EF96F70006DEBDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12BA05421EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BA05431EF96F70006DEBDB /* Debug */,
+				12BA05441EF96F70006DEBDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12BA05451EF96F70006DEBDB /* Build configuration list for PBXNativeTarget "TrafficLightsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BA05461EF96F70006DEBDB /* Debug */,
+				12BA05471EF96F70006DEBDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12BA050B1EF96F70006DEBDB /* Project object */;
+}

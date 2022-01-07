@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C5B07E1EFAC07A00B64895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5B07D1EFAC07A00B64895 /* AppDelegate.m */; };
+		12C5B0811EFAC07A00B64895 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5B0801EFAC07A00B64895 /* ViewController.m */; };
+		12C5B0841EFAC07A00B64895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C5B0821EFAC07A00B64895 /* Main.storyboard */; };
+		12C5B0861EFAC07A00B64895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C5B0851EFAC07A00B64895 /* Assets.xcassets */; };
+		12C5B0891EFAC07A00B64895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C5B0871EFAC07A00B64895 /* LaunchScreen.storyboard */; };
+		12C5B08C1EFAC07A00B64895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5B08B1EFAC07A00B64895 /* main.m */; };
+		12C5B0961EFAC07A00B64895 /* RollofaDiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5B0951EFAC07A00B64895 /* RollofaDiceTests.m */; };
+		12C5B0A11EFAC07A00B64895 /* RollofaDiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C5B0A01EFAC07A00B64895 /* RollofaDiceUITests.m */; };
+		12C5B0B11EFAC5D800B64895 /* American Captain.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12C5B0B01EFAC5CF00B64895 /* American Captain.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12C5B0921EFAC07A00B64895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C5B0711EFAC07A00B64895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C5B0781EFAC07A00B64895;
+			remoteInfo = RollofaDice;
+		};
+		12C5B09D1EFAC07A00B64895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C5B0711EFAC07A00B64895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C5B0781EFAC07A00B64895;
+			remoteInfo = RollofaDice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12C5B0791EFAC07A00B64895 /* RollofaDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollofaDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C5B07C1EFAC07A00B64895 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12C5B07D1EFAC07A00B64895 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12C5B07F1EFAC07A00B64895 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		12C5B0801EFAC07A00B64895 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		12C5B0831EFAC07A00B64895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12C5B0851EFAC07A00B64895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C5B0881EFAC07A00B64895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12C5B08A1EFAC07A00B64895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C5B08B1EFAC07A00B64895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12C5B0911EFAC07A00B64895 /* RollofaDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollofaDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C5B0951EFAC07A00B64895 /* RollofaDiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollofaDiceTests.m; sourceTree = "<group>"; };
+		12C5B0971EFAC07A00B64895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C5B09C1EFAC07A00B64895 /* RollofaDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollofaDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C5B0A01EFAC07A00B64895 /* RollofaDiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollofaDiceUITests.m; sourceTree = "<group>"; };
+		12C5B0A21EFAC07A00B64895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C5B0B01EFAC5CF00B64895 /* American Captain.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "American Captain.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12C5B0761EFAC07A00B64895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B08E1EFAC07A00B64895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B0991EFAC07A00B64895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C5B0701EFAC07A00B64895 = {
+			isa = PBXGroup;
+			children = (
+				12C5B07B1EFAC07A00B64895 /* RollofaDice */,
+				12C5B0941EFAC07A00B64895 /* RollofaDiceTests */,
+				12C5B09F1EFAC07A00B64895 /* RollofaDiceUITests */,
+				12C5B07A1EFAC07A00B64895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12C5B07A1EFAC07A00B64895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C5B0791EFAC07A00B64895 /* RollofaDice.app */,
+				12C5B0911EFAC07A00B64895 /* RollofaDiceTests.xctest */,
+				12C5B09C1EFAC07A00B64895 /* RollofaDiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12C5B07B1EFAC07A00B64895 /* RollofaDice */ = {
+			isa = PBXGroup;
+			children = (
+				12C5B07C1EFAC07A00B64895 /* AppDelegate.h */,
+				12C5B07D1EFAC07A00B64895 /* AppDelegate.m */,
+				12C5B07F1EFAC07A00B64895 /* ViewController.h */,
+				12C5B0801EFAC07A00B64895 /* ViewController.m */,
+				12C5B0821EFAC07A00B64895 /* Main.storyboard */,
+				12C5B0851EFAC07A00B64895 /* Assets.xcassets */,
+				12C5B0871EFAC07A00B64895 /* LaunchScreen.storyboard */,
+				12C5B08A1EFAC07A00B64895 /* Info.plist */,
+				12C5B08B1EFAC07A00B64895 /* main.m */,
+				12C5B0B01EFAC5CF00B64895 /* American Captain.otf */,
+			);
+			path = RollofaDice;
+			sourceTree = "<group>";
+		};
+		12C5B0941EFAC07A00B64895 /* RollofaDiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				12C5B0951EFAC07A00B64895 /* RollofaDiceTests.m */,
+				12C5B0971EFAC07A00B64895 /* Info.plist */,
+			);
+			path = RollofaDiceTests;
+			sourceTree = "<group>";
+		};
+		12C5B09F1EFAC07A00B64895 /* RollofaDiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12C5B0A01EFAC07A00B64895 /* RollofaDiceUITests.m */,
+				12C5B0A21EFAC07A00B64895 /* Info.plist */,
+			);
+			path = RollofaDiceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12C5B0781EFAC07A00B64895 /* RollofaDice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C5B0A51EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDice" */;
+			buildPhases = (
+				12C5B0751EFAC07A00B64895 /* Sources */,
+				12C5B0761EFAC07A00B64895 /* Frameworks */,
+				12C5B0771EFAC07A00B64895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RollofaDice;
+			productName = RollofaDice;
+			productReference = 12C5B0791EFAC07A00B64895 /* RollofaDice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12C5B0901EFAC07A00B64895 /* RollofaDiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C5B0A81EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDiceTests" */;
+			buildPhases = (
+				12C5B08D1EFAC07A00B64895 /* Sources */,
+				12C5B08E1EFAC07A00B64895 /* Frameworks */,
+				12C5B08F1EFAC07A00B64895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C5B0931EFAC07A00B64895 /* PBXTargetDependency */,
+			);
+			name = RollofaDiceTests;
+			productName = RollofaDiceTests;
+			productReference = 12C5B0911EFAC07A00B64895 /* RollofaDiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12C5B09B1EFAC07A00B64895 /* RollofaDiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C5B0AB1EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDiceUITests" */;
+			buildPhases = (
+				12C5B0981EFAC07A00B64895 /* Sources */,
+				12C5B0991EFAC07A00B64895 /* Frameworks */,
+				12C5B09A1EFAC07A00B64895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C5B09E1EFAC07A00B64895 /* PBXTargetDependency */,
+			);
+			name = RollofaDiceUITests;
+			productName = RollofaDiceUITests;
+			productReference = 12C5B09C1EFAC07A00B64895 /* RollofaDiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12C5B0711EFAC07A00B64895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Aaron Caines";
+				TargetAttributes = {
+					12C5B0781EFAC07A00B64895 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					12C5B0901EFAC07A00B64895 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 12C5B0781EFAC07A00B64895;
+					};
+					12C5B09B1EFAC07A00B64895 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 12C5B0781EFAC07A00B64895;
+					};
+				};
+			};
+			buildConfigurationList = 12C5B0741EFAC07A00B64895 /* Build configuration list for PBXProject "RollofaDice" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12C5B0701EFAC07A00B64895;
+			productRefGroup = 12C5B07A1EFAC07A00B64895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12C5B0781EFAC07A00B64895 /* RollofaDice */,
+				12C5B0901EFAC07A00B64895 /* RollofaDiceTests */,
+				12C5B09B1EFAC07A00B64895 /* RollofaDiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12C5B0771EFAC07A00B64895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C5B0B11EFAC5D800B64895 /* American Captain.otf in Resources */,
+				12C5B0891EFAC07A00B64895 /* LaunchScreen.storyboard in Resources */,
+				12C5B0861EFAC07A00B64895 /* Assets.xcassets in Resources */,
+				12C5B0841EFAC07A00B64895 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B08F1EFAC07A00B64895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B09A1EFAC07A00B64895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12C5B0751EFAC07A00B64895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C5B0811EFAC07A00B64895 /* ViewController.m in Sources */,
+				12C5B08C1EFAC07A00B64895 /* main.m in Sources */,
+				12C5B07E1EFAC07A00B64895 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B08D1EFAC07A00B64895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C5B0961EFAC07A00B64895 /* RollofaDiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C5B0981EFAC07A00B64895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C5B0A11EFAC07A00B64895 /* RollofaDiceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12C5B0931EFAC07A00B64895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C5B0781EFAC07A00B64895 /* RollofaDice */;
+			targetProxy = 12C5B0921EFAC07A00B64895 /* PBXContainerItemProxy */;
+		};
+		12C5B09E1EFAC07A00B64895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C5B0781EFAC07A00B64895 /* RollofaDice */;
+			targetProxy = 12C5B09D1EFAC07A00B64895 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12C5B0821EFAC07A00B64895 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12C5B0831EFAC07A00B64895 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12C5B0871EFAC07A00B64895 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12C5B0881EFAC07A00B64895 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12C5B0A31EFAC07A00B64895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12C5B0A41EFAC07A00B64895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12C5B0A61EFAC07A00B64895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12C5B0A71EFAC07A00B64895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12C5B0A91EFAC07A00B64895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RollofaDice.app/RollofaDice";
+			};
+			name = Debug;
+		};
+		12C5B0AA1EFAC07A00B64895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RollofaDice.app/RollofaDice";
+			};
+			name = Release;
+		};
+		12C5B0AC1EFAC07A00B64895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RollofaDice;
+			};
+			name = Debug;
+		};
+		12C5B0AD1EFAC07A00B64895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GR8YTJP3JY;
+				INFOPLIST_FILE = RollofaDiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geekylemondevelopment.RollofaDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RollofaDice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C5B0741EFAC07A00B64895 /* Build configuration list for PBXProject "RollofaDice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C5B0A31EFAC07A00B64895 /* Debug */,
+				12C5B0A41EFAC07A00B64895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C5B0A51EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C5B0A61EFAC07A00B64895 /* Debug */,
+				12C5B0A71EFAC07A00B64895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12C5B0A81EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C5B0A91EFAC07A00B64895 /* Debug */,
+				12C5B0AA1EFAC07A00B64895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12C5B0AB1EFAC07A00B64895 /* Build configuration list for PBXNativeTarget "RollofaDiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C5B0AC1EFAC07A00B64895 /* Debug */,
+				12C5B0AD1EFAC07A00B64895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12C5B0711EFAC07A00B64895 /* Project object */;
+}
