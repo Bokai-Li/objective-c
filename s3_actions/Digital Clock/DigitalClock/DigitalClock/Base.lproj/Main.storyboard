@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+        <array key="digital-7.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Sq1-LK-lYP">
+                                <rect key="frame" x="16" y="216.5" width="343" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="Bnp-Hj-EIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="115"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-eN-dld">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hfO-db-WGl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Show Settings">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="settings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dk2-As-A7m"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-VG-rT0">
+                                <rect key="frame" x="16" y="449" width="343" height="150"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-hG-zKK">
+                                        <rect key="frame" x="8" y="46.5" width="327" height="25.5"/>
+                                        <segments>
+                                            <segment title="White"/>
+                                            <segment title="Black"/>
+                                            <segment title="Green"/>
+                                            <segment title="Red"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="clockSeg:" destination="BYZ-38-t0r" eventType="valueChanged" id="cEi-ng-DWB"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Clock Colour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufx-nN-68t">
+                                        <rect key="frame" x="8" y="14" width="327" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-c7-sIo">
+                                        <rect key="frame" x="8" y="111.5" width="327" height="25.5"/>
+                                        <segments>
+                                            <segment title="Black"/>
+                                            <segment title="White"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Yellow"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="backgroundSeg:" destination="BYZ-38-t0r" eventType="valueChanged" id="eRl-g7-tnY"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Background Colour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmI-sY-Ezm">
+                                        <rect key="frame" x="8" y="79" width="327" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ef3-hG-zKK" firstAttribute="leading" secondItem="eIT-VG-rT0" secondAttribute="leading" constant="8" id="9ml-iM-T0i"/>
+                                    <constraint firstItem="FmI-sY-Ezm" firstAttribute="height" secondItem="ufx-nN-68t" secondAttribute="height" id="BOj-0B-46t"/>
+                                    <constraint firstItem="ufx-nN-68t" firstAttribute="leading" secondItem="eIT-VG-rT0" secondAttribute="leading" constant="8" id="CzF-3d-rVv"/>
+                                    <constraint firstItem="ef3-hG-zKK" firstAttribute="height" secondItem="ufx-nN-68t" secondAttribute="height" id="JhB-mY-oo3"/>
+                                    <constraint firstAttribute="trailing" secondItem="h8c-c7-sIo" secondAttribute="trailing" constant="8" id="Jnx-ar-VMR"/>
+                                    <constraint firstItem="ef3-hG-zKK" firstAttribute="top" secondItem="ufx-nN-68t" secondAttribute="bottom" constant="8" id="QzE-2f-DkZ"/>
+                                    <constraint firstItem="FmI-sY-Ezm" firstAttribute="top" secondItem="ef3-hG-zKK" secondAttribute="bottom" constant="8" id="VYU-Ro-miC"/>
+                                    <constraint firstAttribute="height" constant="150" id="eI8-e4-HUl"/>
+                                    <constraint firstItem="FmI-sY-Ezm" firstAttribute="leading" secondItem="eIT-VG-rT0" secondAttribute="leading" constant="8" id="fsx-E3-LNi"/>
+                                    <constraint firstItem="h8c-c7-sIo" firstAttribute="top" secondItem="FmI-sY-Ezm" secondAttribute="bottom" constant="8" id="jLu-rc-gTV"/>
+                                    <constraint firstItem="ufx-nN-68t" firstAttribute="top" secondItem="eIT-VG-rT0" secondAttribute="top" constant="14" id="m0l-eN-6w1"/>
+                                    <constraint firstAttribute="bottom" secondItem="h8c-c7-sIo" secondAttribute="bottom" constant="14" id="nRB-qe-Teo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ufx-nN-68t" secondAttribute="trailing" constant="8" id="odE-2O-W6y"/>
+                                    <constraint firstAttribute="trailing" secondItem="FmI-sY-Ezm" secondAttribute="trailing" constant="8" id="rzQ-Jd-oDu"/>
+                                    <constraint firstItem="h8c-c7-sIo" firstAttribute="height" secondItem="ufx-nN-68t" secondAttribute="height" id="xCg-FL-fd1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ef3-hG-zKK" secondAttribute="trailing" constant="8" id="yMk-up-oyJ"/>
+                                    <constraint firstItem="h8c-c7-sIo" firstAttribute="leading" secondItem="eIT-VG-rT0" secondAttribute="leading" constant="8" id="zTa-gp-ll7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FK6-eN-dld" firstAttribute="top" secondItem="eIT-VG-rT0" secondAttribute="bottom" constant="8" id="4uS-u6-sHq"/>
+                            <constraint firstItem="eIT-VG-rT0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6hK-bH-uKT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FK6-eN-dld" secondAttribute="bottom" constant="20" id="Iw8-np-iNt"/>
+                            <constraint firstItem="Sq1-LK-lYP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5D-X5-Aih"/>
+                            <constraint firstItem="Sq1-LK-lYP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="er0-sb-7dJ"/>
+                            <constraint firstItem="Sq1-LK-lYP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kFN-1m-NLU"/>
+                            <constraint firstItem="FK6-eN-dld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rqJ-rE-DhK"/>
+                            <constraint firstItem="eIT-VG-rT0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wMH-Ok-yEC"/>
+                            <constraint firstItem="Sq1-LK-lYP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xYz-MV-TDL"/>
+                            <constraint firstItem="FK6-eN-dld" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zTd-dx-k6y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundColour" destination="h8c-c7-sIo" id="6kU-Ep-seX"/>
+                        <outlet property="clockColour" destination="ef3-hG-zKK" id="xf9-gy-Uee"/>
+                        <outlet property="label" destination="Sq1-LK-lYP" id="wqJ-UA-zl7"/>
+                        <outlet property="settingsButton" destination="FK6-eN-dld" id="kwY-Ba-tZ1"/>
+                        <outlet property="settingsView" destination="eIT-VG-rT0" id="2MW-UZ-bb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
