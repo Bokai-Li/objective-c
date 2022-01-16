@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvG-PS-DAJ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Standard" id="Ad1-SR-tCy">
+                                        <connections>
+                                            <action selector="standard:" destination="BYZ-38-t0r" id="I6V-Iw-P7R"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lra-Hg-19Z"/>
+                                    <barButtonItem title="Satellite" id="WPM-UB-znF">
+                                        <connections>
+                                            <action selector="satellite:" destination="BYZ-38-t0r" id="X92-VM-eET"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DYX-eT-iFQ"/>
+                                    <barButtonItem title="Hybrid" id="n0n-cC-0tV">
+                                        <connections>
+                                            <action selector="hybrid:" destination="BYZ-38-t0r" id="fK5-V5-UVT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OM2-ab-bbu"/>
+                                    <barButtonItem title="Locate" id="4he-cZ-Ndd">
+                                        <connections>
+                                            <action selector="locate:" destination="BYZ-38-t0r" id="kNJ-PC-k68"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFZ-y0-KOL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="MapView" id="TWf-dy-T79">
+                                        <barButtonItem key="rightBarButtonItem" title="Directions" id="ojx-Fk-t1q">
+                                            <connections>
+                                                <action selector="directions:" destination="BYZ-38-t0r" id="SMd-b2-NQz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZMU-PY-3xi">
+                                <rect key="frame" x="0.0" y="44" width="375" height="579"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DFZ-y0-KOL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Jl-7o-Yr9"/>
+                            <constraint firstItem="DFZ-y0-KOL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7da-U8-1GI"/>
+                            <constraint firstAttribute="trailing" secondItem="dvG-PS-DAJ" secondAttribute="trailing" id="E08-ni-PL3"/>
+                            <constraint firstItem="dvG-PS-DAJ" firstAttribute="top" secondItem="ZMU-PY-3xi" secondAttribute="bottom" id="ZAX-Ej-sbY"/>
+                            <constraint firstItem="ZMU-PY-3xi" firstAttribute="top" secondItem="DFZ-y0-KOL" secondAttribute="bottom" id="aTX-ba-q8u"/>
+                            <constraint firstAttribute="trailing" secondItem="DFZ-y0-KOL" secondAttribute="trailing" id="eCG-Vn-j6J"/>
+                            <constraint firstItem="dvG-PS-DAJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iDh-hW-QCS"/>
+                            <constraint firstAttribute="bottom" secondItem="dvG-PS-DAJ" secondAttribute="bottom" id="l6z-sE-aWq"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMU-PY-3xi" secondAttribute="trailing" id="myE-lP-wIU"/>
+                            <constraint firstItem="ZMU-PY-3xi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="phg-Xg-WNE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapKit" destination="ZMU-PY-3xi" id="kev-nP-0nn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9D-5F-gQq">
+                                <rect key="frame" x="0.0" y="56" width="414" height="636"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soP-hf-CUq">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="MuF-Zs-d2u">
+                                        <connections>
+                                            <action selector="stopLoading" destination="u9D-5F-gQq" id="UGk-BH-9So"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="jLg-pu-wtB">
+                                        <connections>
+                                            <action selector="reload" destination="u9D-5F-gQq" id="sKZ-RQ-EaX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="D1Y-4V-Gdc"/>
+                                    <barButtonItem systemItem="rewind" id="Zzn-Gq-HVU">
+                                        <connections>
+                                            <action selector="goBack" destination="u9D-5F-gQq" id="0f6-cK-kQY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="9Sg-JR-mUP">
+                                        <connections>
+                                            <action selector="goForward" destination="u9D-5F-gQq" id="9UQ-K6-CW5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3Rb-E9-nxR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hNm-bd-HD1"/>
+                                </connections>
+                            </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VeD-sx-rQM">
+                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                                <color key="color" red="1" green="0.36275070990000002" blue="0.348192528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="soP-hf-CUq" firstAttribute="top" secondItem="u9D-5F-gQq" secondAttribute="bottom" id="BhG-HO-Q0G"/>
+                            <constraint firstItem="u9D-5F-gQq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IML-ZA-11K"/>
+                            <constraint firstItem="soP-hf-CUq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JTF-Tp-1Mu"/>
+                            <constraint firstItem="3Rb-E9-nxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ntv-80-xyZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Rb-E9-nxR" secondAttribute="trailing" id="XQC-8f-y0L"/>
+                            <constraint firstItem="VeD-sx-rQM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zvl-lN-kj6"/>
+                            <constraint firstAttribute="trailing" secondItem="u9D-5F-gQq" secondAttribute="trailing" id="bUO-k7-WGY"/>
+                            <constraint firstItem="VeD-sx-rQM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hPA-hY-Het"/>
+                            <constraint firstAttribute="trailing" secondItem="soP-hf-CUq" secondAttribute="trailing" id="nLW-Ga-tKX"/>
+                            <constraint firstItem="3Rb-E9-nxR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qCW-UN-bE5"/>
+                            <constraint firstAttribute="bottom" secondItem="soP-hf-CUq" secondAttribute="bottom" id="rOr-eD-Xe7"/>
+                            <constraint firstItem="u9D-5F-gQq" firstAttribute="top" secondItem="3Rb-E9-nxR" secondAttribute="bottom" id="rfh-GM-Zwg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actInd" destination="VeD-sx-rQM" id="hxo-Ue-v5r"/>
+                        <outlet property="searchBar" destination="3Rb-E9-nxR" id="Psn-zR-eoP"/>
+                        <outlet property="webView" destination="u9D-5F-gQq" id="ysx-fd-Nts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
