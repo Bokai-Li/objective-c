@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="xf3-Gz-hKt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-yc-DED">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HOp-a5-6ve">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="195.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-X4-d0L">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="195.5"/>
+                                                <state key="normal" image="Dog"/>
+                                                <connections>
+                                                    <action selector="dog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Joq-2I-iL8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pg-gl-hhR">
+                                                <rect key="frame" x="177.5" y="0.0" width="157.5" height="195.5"/>
+                                                <state key="normal" image="Cat"/>
+                                                <connections>
+                                                    <action selector="cat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KyZ-et-grA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-cB-5uf">
+                                        <rect key="frame" x="0.0" y="215.5" width="335" height="196"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzi-gG-WXX">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="196"/>
+                                                <state key="normal" image="Sheep"/>
+                                                <connections>
+                                                    <action selector="sheep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WW5-fb-0t7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-xT-HFF">
+                                                <rect key="frame" x="177.5" y="0.0" width="157.5" height="196"/>
+                                                <state key="normal" image="Frog"/>
+                                                <connections>
+                                                    <action selector="frog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sFr-lP-uCB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E8E-jz-6mq">
+                                        <rect key="frame" x="0.0" y="431.5" width="335" height="195.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-ar-8Ri">
+                                                <rect key="frame" x="0.0" y="0.0" width="157.5" height="195.5"/>
+                                                <state key="normal" image="Pig"/>
+                                                <connections>
+                                                    <action selector="pig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnY-IH-P3n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaz-Ve-9tV">
+                                                <rect key="frame" x="177.5" y="0.0" width="157.5" height="195.5"/>
+                                                <state key="normal" image="Horse"/>
+                                                <connections>
+                                                    <action selector="horse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5R-yD-oZC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xf3-Gz-hKt" secondAttribute="trailing" id="0lQ-pr-de6"/>
+                            <constraint firstItem="xf3-Gz-hKt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Mm-JN-Hg0"/>
+                            <constraint firstAttribute="bottom" secondItem="xf3-Gz-hKt" secondAttribute="bottom" id="FRY-vg-9bR"/>
+                            <constraint firstItem="MMK-yc-DED" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Lcq-J4-eQ0"/>
+                            <constraint firstItem="MMK-yc-DED" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Xxd-er-bug"/>
+                            <constraint firstItem="xf3-Gz-hKt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cAt-Nh-u3A"/>
+                            <constraint firstAttribute="bottom" secondItem="MMK-yc-DED" secondAttribute="bottom" constant="20" id="jeB-6G-wCm"/>
+                            <constraint firstAttribute="trailing" secondItem="MMK-yc-DED" secondAttribute="trailing" constant="20" id="oPW-x2-FCd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1200"/>
+        <image name="Cat" width="507" height="800"/>
+        <image name="Dog" width="555" height="744"/>
+        <image name="Frog" width="794" height="900"/>
+        <image name="Horse" width="510" height="594"/>
+        <image name="Pig" width="667" height="745"/>
+        <image name="Sheep" width="576" height="600"/>
+    </resources>
+</document>
