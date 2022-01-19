@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cheveuxdange.ttf">
+            <string>Cheveuxdange</string>
+        </array>
+        <array key="DK Cinnabar Brush.ttf">
+            <string>DKCinnabarBrush</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Table" translatesAutoresizingMaskIntoConstraints="NO" id="VRp-Cr-Ro9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckw-6T-jwQ">
+                                <rect key="frame" x="16" y="28" width="343" height="161"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyJ-Sb-Y5v">
+                                <rect key="frame" x="16" y="486" width="343" height="161"/>
+                                <fontDescription key="fontDescription" name="DKCinnabarBrush" family="DK Cinnabar Brush" pointSize="50"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ng-nc-Bsg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="i70-aT-Z1n">
+                                <rect key="frame" x="16" y="263" width="167.5" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="CmT-b4-9lS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_cover" translatesAutoresizingMaskIntoConstraints="NO" id="D0C-hi-0Ee">
+                                <rect key="frame" x="191.5" y="263" width="167.5" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="lRf-15-Vzs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AD-oz-RUN">
+                                <rect key="frame" x="16" y="197" width="167" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="kNE-E3-iRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRf-zF-zvW">
+                                <rect key="frame" x="191" y="197" width="167" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="0Ai-lY-FEy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cheveuxdange" family="Cheveuxdange" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eRf-zF-zvW" firstAttribute="width" secondItem="8AD-oz-RUN" secondAttribute="width" id="3mg-Mv-X2T"/>
+                            <constraint firstItem="8AD-oz-RUN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="75c-QW-gu9"/>
+                            <constraint firstItem="VyJ-Sb-Y5v" firstAttribute="top" secondItem="i70-aT-Z1n" secondAttribute="bottom" constant="8" id="7nH-2K-JWz"/>
+                            <constraint firstItem="D0C-hi-0Ee" firstAttribute="width" secondItem="i70-aT-Z1n" secondAttribute="width" id="AM7-mH-2S8"/>
+                            <constraint firstAttribute="bottom" secondItem="VyJ-Sb-Y5v" secondAttribute="bottom" constant="20" id="KlZ-W3-Xok"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eRf-zF-zvW" secondAttribute="trailing" constant="1" id="KnV-2q-Bpl"/>
+                            <constraint firstAttribute="trailing" secondItem="VRp-Cr-Ro9" secondAttribute="trailing" id="M0O-vs-Evn"/>
+                            <constraint firstItem="VyJ-Sb-Y5v" firstAttribute="top" secondItem="D0C-hi-0Ee" secondAttribute="bottom" constant="8" id="RXP-dV-zhm"/>
+                            <constraint firstAttribute="bottom" secondItem="VRp-Cr-Ro9" secondAttribute="bottom" id="S9m-ac-fOA"/>
+                            <constraint firstItem="VRp-Cr-Ro9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sjg-bl-dN0"/>
+                            <constraint firstItem="eRf-zF-zvW" firstAttribute="top" secondItem="ckw-6T-jwQ" secondAttribute="bottom" constant="8" id="bIp-su-scU"/>
+                            <constraint firstItem="VRp-Cr-Ro9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e79-Ce-rCF"/>
+                            <constraint firstItem="eRf-zF-zvW" firstAttribute="leading" secondItem="8AD-oz-RUN" secondAttribute="trailing" constant="8" id="kCp-SL-RCR"/>
+                            <constraint firstItem="D0C-hi-0Ee" firstAttribute="top" secondItem="eRf-zF-zvW" secondAttribute="bottom" constant="8" id="m4S-9i-TEI"/>
+                            <constraint firstItem="D0C-hi-0Ee" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nlq-bE-7gd"/>
+                            <constraint firstItem="VyJ-Sb-Y5v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="obL-nU-qLh"/>
+                            <constraint firstItem="ckw-6T-jwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="q0s-0U-h5w"/>
+                            <constraint firstItem="ckw-6T-jwQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="r73-dd-YUG"/>
+                            <constraint firstItem="i70-aT-Z1n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rmY-p2-hUM"/>
+                            <constraint firstItem="D0C-hi-0Ee" firstAttribute="leading" secondItem="i70-aT-Z1n" secondAttribute="trailing" constant="8" id="sjN-Mc-CtK"/>
+                            <constraint firstItem="i70-aT-Z1n" firstAttribute="top" secondItem="8AD-oz-RUN" secondAttribute="bottom" constant="8" id="t9b-Ky-MSz"/>
+                            <constraint firstItem="VyJ-Sb-Y5v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tJ4-90-i88"/>
+                            <constraint firstItem="ckw-6T-jwQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wY2-Zi-frH"/>
+                            <constraint firstItem="8AD-oz-RUN" firstAttribute="top" secondItem="ckw-6T-jwQ" secondAttribute="bottom" constant="8" id="whk-Hm-pTg"/>
+                            <constraint firstItem="VyJ-Sb-Y5v" firstAttribute="height" secondItem="ckw-6T-jwQ" secondAttribute="height" id="xkr-Dx-KFj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="i70-aT-Z1n" id="XHc-Qr-KeB"/>
+                        <outlet property="imageView2" destination="D0C-hi-0Ee" id="5XL-nS-Ef4"/>
+                        <outlet property="scoreLabel" destination="eRf-zF-zvW" id="Vp9-OQ-Ueu"/>
+                        <outlet property="startGameButton" destination="VyJ-Sb-Y5v" id="dWz-3N-V1Q"/>
+                        <outlet property="timeLabel" destination="8AD-oz-RUN" id="fV9-oG-NMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Table" width="1980" height="1200"/>
+        <image name="blue_cover" width="500" height="726"/>
+    </resources>
+</document>
